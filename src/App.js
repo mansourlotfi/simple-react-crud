@@ -80,7 +80,7 @@ class App extends Component {
 					<input type="text" ref="name" placeholder="your name" className="formField" />
 					<input type="text" ref="address" placeholder="your address" className="formField" />
 					<button onClick={(e) => this.fSubmit(e)} className="myButton">
-						submit{' '}
+						submit
 					</button>
 				</form>
 				<pre>
@@ -88,10 +88,10 @@ class App extends Component {
 						<li key={i} className="myList">
 							{i + 1}. {data.name}, {data.address}
 							<button onClick={() => this.fRemove(i)} className="myListButton">
-								remove{' '}
+								remove
 							</button>
 							<button onClick={() => this.fEdit(i)} className="myListButton">
-								edit{' '}
+								edit
 							</button>
 						</li>
 					))}
